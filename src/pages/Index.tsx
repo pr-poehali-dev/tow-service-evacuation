@@ -12,7 +12,7 @@ const Index = () => {
       icon: "Car",
       title: "Легковые автомобили",
       description: "Эвакуация легковых авто любой массы",
-      price: "от 2 500 ₽"
+      price: "от 3 000 ₽"
     },
     {
       icon: "Truck",
