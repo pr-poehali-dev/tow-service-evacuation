@@ -12,24 +12,28 @@ const Index = () => {
       icon: "Car",
       title: "Легковые автомобили",
       description: "Эвакуация легковых авто любой массы",
+      details: "",
       price: "от 3 000 ₽"
     },
     {
       icon: "Truck",
       title: "Грузовые автомобили",
       description: "Перевозка грузовых авто и микроавтобусов",
+      details: "",
       price: "от 4 500 ₽"
     },
     {
       icon: "Bike",
       title: "Мотоциклы и квадроциклы",
       description: "Бережная транспортировка мототехники",
+      details: "",
       price: "от 1 800 ₽"
     },
     {
       icon: "Construction",
       title: "Спецтехника",
       description: "Эвакуация строительной и спецтехники",
+      details: "",
       price: "от 6 000 ₽"
     }
   ];
@@ -126,7 +130,8 @@ const Index = () => {
                   <h3 className="text-xl font-semibold mb-2 text-foreground" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
+                  <p className="text-muted-foreground mb-2">{service.description}</p>
+                  {service.details && <p className="text-sm text-muted-foreground mb-4">{service.details}</p>}
                   <p className="text-2xl font-bold text-primary">{service.price}</p>
                 </CardContent>
               </Card>
