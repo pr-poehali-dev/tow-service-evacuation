@@ -110,6 +110,23 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-8 text-foreground" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+            О компании
+          </h2>
+          <div className="bg-muted/30 rounded-lg p-8 border border-border">
+            <p className="text-lg text-foreground leading-relaxed mb-4">
+              Наша компания предоставляет профессиональные услуги эвакуации автомобилей с 2014 года. 
+              Мы работаем круглосуточно и готовы прийти на помощь в любой ситуации.
+            </p>
+            <p className="text-lg text-foreground leading-relaxed">
+              Современный автопарк, опытные водители и прозрачные цены — всё для вашего спокойствия и безопасности вашего автомобиля.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="services" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground" style={{ fontFamily: "'Montserrat', sans-serif" }}>
