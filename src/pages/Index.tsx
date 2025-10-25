@@ -53,6 +53,27 @@ const Index = () => {
     { icon: "Phone", title: "Круглосуточно", text: "24/7 без выходных" }
   ];
 
+  const reviews = [
+    {
+      name: "Алексей М.",
+      rating: 5,
+      text: "Отличный сервис! Приехали за 20 минут, быстро погрузили машину. Водитель вежливый и профессиональный. Цены адекватные.",
+      date: "15 октября 2024"
+    },
+    {
+      name: "Мария К.",
+      rating: 5,
+      text: "Спасибо большое! Помогли в сложной ситуации ночью. Оператор всё объяснил, эвакуатор приехал точно в срок. Рекомендую!",
+      date: "8 октября 2024"
+    },
+    {
+      name: "Дмитрий П.",
+      rating: 5,
+      text: "Пользовался услугами несколько раз. Всегда довольны — быстро, аккуратно, без скрытых платежей. Буду обращаться ещё.",
+      date: "2 октября 2024"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background" style={{ fontFamily: "'Open Sans', sans-serif" }}>
       <section className="relative bg-secondary text-white py-20 px-4 overflow-hidden">
@@ -199,6 +220,40 @@ const Index = () => {
               <Icon name="Info" className="inline mr-2" size={20} />
               <strong>Важно:</strong> Стоимость может изменяться в зависимости от сложности подачи, времени суток и погодных условий. Точную цену уточняйте по телефону.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-foreground" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+            Отзывы клиентов
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Что говорят о нас наши клиенты
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {reviews.map((review, index) => (
+              <Card 
+                key={index} 
+                className="hover-scale animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-semibold text-lg text-foreground">{review.name}</h3>
+                    <div className="flex gap-1">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-primary fill-primary" />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-foreground mb-4 leading-relaxed">{review.text}</p>
+                  <p className="text-sm text-muted-foreground">{review.date}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
