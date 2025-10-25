@@ -73,10 +73,7 @@ const Index = () => {
               size="lg" 
               onClick={handleCall}
               className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 h-auto font-semibold"
-            >
-              <Icon name="Phone" className="mr-2" size={24} />
-              Позвонить +7 (900) 123-45-67
-            </Button>
+            >Позвонить +7 (911) 848-35-67</Button>
             <Button 
               size="lg" 
               variant="outline"
@@ -196,10 +193,7 @@ const Index = () => {
             size="lg"
             onClick={handleCall}
             className="bg-white text-primary hover:bg-white/90 text-lg px-10 py-6 h-auto font-semibold"
-          >
-            <Icon name="Phone" className="mr-2" size={24} />
-            Позвонить +7 (900) 123-45-67
-          </Button>
+          >ЗВОНИ</Button>
         </div>
       </section>
 
