@@ -54,7 +54,7 @@ const Index = () => {
       <section className="relative bg-secondary text-white py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img 
-            src="https://cdn.poehali.dev/projects/0739daf6-c141-4701-aa17-6f6c44d30dde/files/7b8f427e-0fb4-4cd1-ba04-ffd853f95492.jpg" 
+            src="https://cdn.poehali.dev/projects/0739daf6-c141-4701-aa17-6f6c44d30dde/files/08fbd019-495f-432c-8be4-f237089fb508.jpg" 
             alt="Эвакуатор"
             className="w-full h-full object-cover"
           />
